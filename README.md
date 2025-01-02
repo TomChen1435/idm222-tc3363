@@ -9,39 +9,47 @@ Redesign and rebuild parts of ridepatco.org
 - maps & stations
     - overall route map
     - station list
-    - elevator & escalator status information
-- fare system
-    - freedom card
+- schedules & fares
+    - schedules
+    - travel alerts & notices
+    - email notification service
+    - freedom fare system
+        - how freedom works
+        - auto load
+        - balance protection
+        - your choice of tickets
+        - freedom card registration
+        - freedom to save
+        - freedom faqs
+        - customer service
+        - privacy policy
+        - terms & conditions
     - fares
     - reduced fare program
-- notifications
-    - travel alerts & notices
-    - email notification services
-- schedules
 - traveling on patco
+    - think green ride patco!
     - first time rider
     - seniors
-    - students
-    - accessibility
-    - service animals
-    - faq's
-    - bicycles
-    - transit ambassadors
+    - faqs
     - lost & found
+    - rules & regulations
     - quiet car
     - courtesy counts
-    - rules & regulations
     - photography, filming & video policy
+    - accessibility
+    - transit ambassadors
+    - bicycles
     - travel links
     - alternate transit
-    - think green ride patco!
+    - patco u
 - news & media
-    - join our mail list
-    - patco press releases
+    - press releases
+    - media
     - advertising on patco
+    - general transit feed specification (gtfs)
 - safety & security
     - transit watch
-    - what should i consider suspicious
+    - what should i consider suspicious?
     - drpa police
     - crime prevention tips
     - safety tips
@@ -54,8 +62,7 @@ Redesign and rebuild parts of ridepatco.org
     - citizens advisory committee
     - patco cares
     - message from general manager
-    - title vi programs
-    - americans with disabilities act
+    - public notice of title vi rights
     - office of inspector general
     - patco history
     - employment
