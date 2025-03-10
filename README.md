@@ -1,7 +1,3 @@
-# idm-221-tc3363-2
- 
-## Topic of Project
+# idm-221-tc3363
 
-Redesign and rebuild parts of the [Performance Meal Prep Website](eatpmp.com)
-
-## Site Structure
+For this project, I am redesigning and rebuilding the [Performance Meal Prep](https://www.eatpmp.com) website.
