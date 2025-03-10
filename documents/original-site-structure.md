@@ -1,0 +1,44 @@
+# Site Structure
+
+- Alert
+    - Delivery information
+- Header
+    - Logo (Return to homepage)
+    - Cart
+    - Account
+- Navigation
+        - Menu
+        - [Catering Service](https://www.pmpcatering.com)
+        - Delivery
+        - About
+        - FAQ's 
+- Main
+    - Home
+        - Carousel
+            - Prepared and delivered weekly.
+            - Fresh ingredients. Taste the difference.
+            - "Check out the Menu" button
+        - How it works
+        - Contact information
+            - 267-290-4452
+            - info@eatpmp.com
+            - 5070 Parkside Avenue, Philadelphia, PA 19131
+            - Social Media
+                - [Facebook](https://www.facebook.com/PerformanceMealPrep)
+                - [Twitter](https://twitter.com/EAT_PMP)
+                - [Instagram](https://www.instagram.com/performancemealprep)
+            - Direct message
+            - Newsletter registration
+            - Affiliates
+                - Are you a gym owner? A personal trainer? An influential individual? If you would like to become an affiliate, shoot us an email. 
+- Footer    
+    - Copyright information
+        - © 2025, Performance Meal Prep - Mock Website
+    - Payment methods
+        - Diner's Club International
+        - Visa
+        - Mastercard
+        - American Express
+        - Discover
+        - Paypal
+        - Venmo

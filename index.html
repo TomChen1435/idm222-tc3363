@@ -3,12 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Performance Meal Prep</title>
+    <title>Performance Meal Prep (Mock)</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <base target="_blank">
 </head>
 <body>
+
+    <header id="alert">
+        <p>You are now ordering for the week of <span id="delivery-date">3/17/2025</span></p>
+        <p>Order by 5:00 PM on <span id="order-day">Friday</span>, <span id="order-date">3/14/2025</span></p>
+    </header>
+
+    <header>
+        <button id="logo"></button>
+        <button class="icon-only" id="cart-btn-header"></button>
+        <button class="icon-only" id="account-btn-header"></button>
+    </header>
+
+    <nav>
+        <button class="small" id="menu-btn-nav">Menu</button>
+        <a href="https://www.pmpcatering.com" class="small-btn" id="catering-btn-nav">Catering Service</a>
+        <button class="small" id="delivery-btn-nav">Delivery</button>
+        <button class="small" id="about-btn-nav">About</button>
+        <button class="small" id="faq-btn-nav">FAQ's</button>
+    </nav>
+
+    <section class="main" id="delivery-info">
+        <h1>Delivery Information</h1>
+        <section class="card">
+            <h2>Please Note</h2>
+            <ul>
+                <li>Due to a large volume of orders, Performance Meal Prep will NOT refund orders delivered past our deadline.</li>
+                <li>We ask that you order five (5) items for delivery.</li>
+                <li>Traffic and weather conditions may interfere with routes.</li>
+            </ul>
+            <p>We cannot meet specific delivery times. Our routes change every week. Food will be delivered in the order which our routing system processes address information. If you would like your food delivered at a certain time, feel free to include a note at checkout. We will do our best to accommodate any requests.</p>
+        </section>
+        <section class="card">
+            <h2>Where do you deliver to?</h2>
+            <p>We deliver to Philadelphia and the surrounding areas: Montgomery County, Delaware County, Southern New Jersey, and Delaware.</p>
+            <hr>
+            <h2>Can you deliver to my office instead of my home?</h2>
+            <p>Yes! Make sure to list an accurate shipping address at checkout. Also, don't hesitate to tell your colleagues.</p>
+        </section>
+        <section class="card">
+            <h2>Delivery Charges</h2>
+            <p>Delivery charges are determined by distance. There are four zones for delivery. PMP delivers within a 50-mile radius of our production facility. Charges are as follows:</p>
+            <ul>
+                <li>Zone 1: $6.75</li>
+                <li>Zone 2: $8.50</li>
+                <li>Zone 3: $10.00</li>
+                <li>Zone 4: $12.00</li>
+                <li>Extended Range: $20.00</li>
+            </ul>
+            <p>If you are in New Jersey or Delaware, depending on your location in either state there may be an added fee. This is put in place to calculate toll roads.</p>
+        </section>
+        <section class="card">
+            <h2>Delivery Hours</h2>
+            <p>Please identify delivery day at checkout.</p>
+            <ul>
+                <li>Sunday: 11:00 AM - 10:00 PM</li>
+                <li>Monday Morning: 7:00 AM - 1:30 PM</li>
+                <li>Monday Evening: 3:00 PM - 10:00 PM</li>
+                <li>Wednesday: 11:30 AM - 9:00 PM</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Self Pick-up</h2>
+            <p>You can always come to pick up from our production facility on Sunday morning between the hours of 8:00 AM - 12:00 PM. Our address is:</p>
+            <p class="address">5070 Parkside Avenue, Philadelphia, PA 19131</p>
+        </section>
+    </section>
+
+    <section class="main" id="about">
+        <h1>About</h1>
+        <section class="card">
+            <h2>Our Name</h2>
+            <p>Initially, I chose the name Performance Meal Prep to target athletes and power lifters. As time went on we grew our customer base to all walks of life. Children, Mothers, Athletes, and most importantly individuals who just wanted to eat clean. We have now developed several different portions sizes to accommodate all individuals. All of our proteins are fresh and never frozen, we source local when possible and always pack our meals with tons of love.</p>
+        </section>
+        <section class="card">
+            <h2>The Owner</h2>
+            <p>I've always loved to cook. Something about the science and precision of making the perfect dish caught my attention at a young age. I came up with the concept for Performance Meal Prep while living in South Florida. I was working at a restaurant, which specialized in fine French-Fusion cuisine. Being busy with work, I would never have time to cook for myself so I would eat all the food coming out of the restaurant. One week I decided to try a meal prep company in the area. I received my food and was still hungry. Weight lifting has been a passion of mine for years, and these meals weren't filling me up after my workouts. I took to the kitchen and started preparing my own food for the week on my off day. Soon enough, I was getting feedback and people wanted me to cook for them. My roommate at the time couldn't get enough of the healthy meal prep I was doing so I decided to run with this concept and move back to Philadelphia. I started up with very little money out of my parent's kitchen preparing meals for friends in the Philadelphia area. One thing led to another and I started getting calls asking about my service. In just two short months, I formed an LLC and Performance Meal Prep was born! </p>
+            <p class="name">Jesse Batt</p>
+            <p class="job-title">Owner / Operator</p>
+        </section>
+    </section>
+
+    <section class="main" id="faqs">
+        <h1>Frequently Asked Questions</h1>
+        <p>For all delivery related questions, please refer to <a href="#" id="delivery-link">Delivery Information</a></p>
+        <section class="card">
+            <h2>How do I place an order for pickup?</h2>
+            <p>When you check out, select the "Kitchen Pickup" option.</p>
+        </section>
+        <section class="card">
+            <h2>What do I need to do to pick up my order?</h2>
+            <p>Present an email confirmation, cell phone, or printed.</p>
+        </section>
+        <section class="card">
+            <h2>If I have food allergies, how do I let you know?</h2>
+            <p>Make sure to inform us of any food allergies in the notes section at checkout. We will make sure to do whatever we can to accommodate.</p>
+        </section>
+        <section class="card">
+            <h2>When do I need to order by?</h2>
+            <p>Orders close every Friday at 5:00 PM for delivery Sunday or Monday. Order off our limited mid-week delivery menu by 7:00 PM Tuesdays for Wednesday delivery.</p>
+        </section>
+        <section class="card">
+            <h2>How do I heat my meals?</h2>
+            <p>Place a drop of water in your container, microwave on high heat  1:30 -3 minutes with the container lid shut. Depending on the strength of your microwave, you may want to start off on the lighter side.</p>
+            <p>If you would like to heat your meals in the oven we recommend placing them in an oven-safe dish @ 350º for 15-25 minutes. This is the best way to heat our meals. If you have the time it is totally worth it.</p>
+            <p>Pro tip: Wraps & Wings do best in the oven</p>
+        </section>
+        <section class="card">
+            <h2>Can I freeze my meals?</h2>
+            <p>Yes! Make sure the lid is on tight and pull out 5 hours before eating, Heat as normally instructed and enjoy.</p>
+            <p>We recommend not freezing meals for over one month. Do not freeze and thaw aioli, side sauces, or leafy greens.</p>
+        </section>
+        <section class="card">
+            <h2>Can I order on the phone?</h2>
+            <p>Yes, as scheduled.</p>
+        </section>
+        <section class="card">
+            <h2>How often does your menu change?</h2>
+            <p>Our menu is updated bi-weekly; you may see some items repeat themselves, however, you will never see the same menu.</p>
+        </section>
+        <section class="card">
+            <h2>Are nutrition facts given for each meal?</h2>
+            <p>Yes! We list full macronutrient information on each package. Macronutrients are Carbohydrates, Protein, and Fat. We also list calorie counts for each meal. PMP uses a software called MenuCalc, which calculates our macros for us. Please note that all of our food is prepared by our chefs using various preparation methods, therefore, macronutrient information may not be 100% accurate.</p>
+        </section>
+        <section class="card">
+            <h2>How do I book catering?</h2>
+            <p>All cateing information is now on our catering website: <a class="hyperlink" href="https://www.pmpcatering.com">PMP Catering LLC</a>.</p>
+        </section>
+        <section class="card">
+            <h2>I have a wholesale inquiry. Who do I talk to?</h2>
+            <p>For information on becoming a wholesale partner, please contact us at <a href="mailto:hello@eatpmp.com">hello@eatpmp.com</a>.</p>
+        </section>
+        <section class="card">
+            <h2>Does Performance Meal Prep have brand ambassadors?</h2>
+            <p>Yes! If you are interested in promoting PMP, give us a call or e-mail us at <a href="mailto:hello@eatpmp.com">hello@eatpmp.com</a>. We have several brand ambassador programs available.</p>
+        </section>
+    </section>
+
+    <footer>
+        <p class="copyright-info">© 2025, Performance Meal Prep - Mock Website</p>
+        <div class="payment-method-icons">
+            <picture class="icon">
+                <source type="image/svg+xml" srcset="media/icons/diners-club.svg">
+                <img src="media/icons/diners-club.png" alt="Diner's Club Logo">
+            </picture>
+            <picture class="icon">
+                <source type="image/svg+xml" srcset="media/icons/visa.svg">
+                <img src="media/icons/visa.png" alt="Visa Logo">
+            </picture>
+            <picture class="icon">
+                <source type="image/svg+xml" srcset="media/icons/mastercard.svg">
+                <img src="media/icons/mastercard.png" alt="Mastercard Logo">
+            </picture>
+            <picture class="icon">
+                <source type="image/svg+xml" srcset="media/icons/american-express.svg">
+                <img src="media/icons/american-express.png" alt="American Express Logo">
+            </picture>
+            <picture class="icon">
+                <source type="image/svg+xml" srcset="media/icons/discover-card.svg">
+                <img src="media/icons/discover-card.png" alt="Discover Logo">
+            </picture>
+            <picture class="icon">
+                <source type="image/svg+xml" srcset="media/icons/paypal.svg">
+                <img src="media/icons/paypal.png" alt="PayPal Logo">
+            </picture>
+            <picture class="icon">
+                <source type="image/svg+xml" srcset="media/icons/venmo.svg">
+                <img src="media/icons/venmo.png" alt="Venmo Logo">
+            </picture>
+        </div>
+    </footer>
 
     <script src="javascript/postload.js"></script>
 
