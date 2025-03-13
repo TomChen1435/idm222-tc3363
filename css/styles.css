@@ -1,5 +1,34 @@
 /* Colors to use for the website */
 
+/* For general contents, I am using black/white texts on light/dark gray backgrounds. */
+
+/* For the tints and shades of gray, I am using the colors from the Apple developer documents. */
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --macosSystemGray: rgb(142,142,147);
+        --iosSystemGray2: rgb(174,174,178);
+        --iosSystemGray5: rgb(229,229,234);
+        --iosSystemGray6: rgb(242,242,247);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --macosSystemGray: rgb(152,152,157);
+        --iosSystemGray2: rgb(99,99,102);
+        --iosSystemGray5: rgb(44,44,46);
+        --iosSystemGray6: rgb(28,28,30);
+    }
+}
+
+:root {
+    --lightGray0: var(--iosSystemGray2);
+    --lightGray1: var(--macosSystemGray);
+    --darkGray0: var(--iosSystemGray6);
+    --darkGray1: var(--iosSystemGray5);
+}
+
 /* For brand-related colors, I am using the green colors from IBM Design Language. */
 
 :root {
