@@ -8,3 +8,21 @@
     --ibmGreen60: #198038;
     --ibmGreen70: #0e6027;
 }
+
+/* For the light mode, I am using the designs of white texts on darker green backgrounds. */
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --green0: var(--ibmGreen60);
+        --green1: var(--ibmGreen70);
+    }
+}
+
+/* For the dark mode, I am using the designs of black texts on brighter green backgrounds. */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --green0: var(--ibmGreen40);
+        --green1: var(--ibmGreen30);
+    }
+}
