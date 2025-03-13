@@ -1,0 +1,10 @@
+/* Colors to use for the website */
+
+/* For brand-related colors, I am using the green colors from IBM Design Language. */
+
+:root {
+    --ibmGreen30: #6fdc8c;
+    --ibmGreen40: #42be65;
+    --ibmGreen60: #198038;
+    --ibmGreen70: #0e6027;
+}
