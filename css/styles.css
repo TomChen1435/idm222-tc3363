@@ -2,6 +2,18 @@
 
 /* For general contents, I am using black/white texts on light/dark gray backgrounds. */
 
+@media (prefers-color-scheme: light) {
+    :root {
+        --textColorRegular: black;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --textColorRegular: white;
+    }
+}
+
 /* For the tints and shades of gray, I am using the colors from the Apple developer documents. */
 
 @media (prefers-color-scheme: light) {
@@ -55,3 +67,4 @@
         --green1: var(--ibmGreen30);
     }
 }
+
