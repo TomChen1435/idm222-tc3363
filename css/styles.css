@@ -18,11 +18,18 @@
 */
 
 :root {
-    --screen-small: 20rem;
-    --screen-medium: 46.5rem;
-    --screen-large: 64rem;
-    --screen-xl: 90rem;
+    --screen-small-min: 320px;
+    --screen-small-max: 743px;
+    --screen-medium-min: 744px;
+    --screen-medium-max: 1023px;
+    --screen-large-min: 1024px;
+    --screen-large-max: 1439px;
+    --screen-xl: 1440px;
 }
+
+/*
+    @media screen and (min-width: calc(var(--screen--min))) and (max-width: calc(var(--screen--max))) {}
+*/
 
 /* 
     Discrete buttons have a border radius of 12px.
