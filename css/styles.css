@@ -1,1 +1,21 @@
 * {box-sizing: border-box;}
+
+/* Screen-size variables for building media queries */
+
+/* 
+    iPhone SE 1 Portrait = 320 x 568;
+    iPad mini 6 Portrait = 744 x 1133;
+    iPad mini 5 Landscape = 1024 x 768;
+
+    320px <= screen-width-small < 744px;
+    744px <= screen-width-medium < 1024px;
+    1024px <= screen-width-large < 1440px;
+    1440px <= screen-width-extra-large;
+*/
+
+:root {
+    --screen-small: 320px;
+    --screen-medium: 744px;
+    --screen-large: 1024px;
+    --screen-xl: 1440px;
+}
