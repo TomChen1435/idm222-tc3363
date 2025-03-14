@@ -93,3 +93,14 @@
         --pink: rgb(255,55,95);
     }
 }
+
+/* Categorize the colors for different purposes. */
+
+/* Alerts and highlights use either black texts on yellow backgrounds or white texts on orange backgrounds. */
+
+:root {
+    --alertBackground0: var(--yellow);
+    --alertBackground1: var(--orange);
+    --alertTextColor0: black;
+    --alertTextColor1: white;
+}
