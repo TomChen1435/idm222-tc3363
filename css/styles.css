@@ -44,3 +44,23 @@
     transition-duration: 90ms;
     transition-timing-function: ease-in-out;
 }
+
+/* Typography */
+
+/* Headings use Montserrat */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('media/typefaces/Montserrat.ttf') format('truetype');
+    font-style: normal;
+}
+
+/* 
+    Others use Helvetica Neue
+    I cannot afford the license for this font. Apple Macintosh computers come with the font pre-installed. Others can use Arial and other sans-serif fonts in the fallback list.
+*/
+
+:root {
+    --fontHeadings: 'Montserrat', sans-serif;
+    --fontRegular: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
