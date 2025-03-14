@@ -8,17 +8,13 @@
     iPad mini 5 Landscape = 1024 x 768;
 
     320px <= screen-width-small < 744px;
-    @media (var(--screen-small) <= width < var(--screen-medium)) {}
 
     744px <= screen-width-medium < 1024px;
-    @media (var(--screen-medium) <= width < var(--screen-large)) {}
 
     1024px <= screen-width-large < 1440px;
-    @media (var(--screen-large) <= width < var(--screen-xl)) {}
 
     1440px <= screen-width-extra-large;
     When the screen is wider than 1440p, there is no need to expand the content anymore.
-    @media (var(--screen-xl) <= width) {}
 */
 
 :root {
@@ -68,3 +64,10 @@
 /* All elements with a class name of 'hide' do not display. */
 
 .hide {display: none !important;}
+
+/* Remove all margins and paddings. */
+
+* {
+    margin: 0;
+    padding: 0;
+}
