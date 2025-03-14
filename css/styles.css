@@ -64,3 +64,7 @@
     --fontHeadings: 'Montserrat', sans-serif;
     --fontRegular: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+/* All elements with a class name of 'hide' do not display. */
+
+.hide {display: none !important;}
