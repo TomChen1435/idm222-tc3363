@@ -46,9 +46,14 @@
 :root {
     --ibmGreen30: #6fdc8c;
     --ibmGreen40: #42be65;
+    --ibmGreen50: #24a148;
     --ibmGreen60: #198038;
     --ibmGreen70: #0e6027;
 }
+
+/* Header and footer will always use the same color. */
+
+:root {--greenStandard: var(--ibmGreen50);}
 
 /* For the light mode, I am using the designs of white texts on darker green backgrounds. */
 
