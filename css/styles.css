@@ -1,7 +1,5 @@
 * {box-sizing: border-box;}
 
-/*  */
-
 /* 
     Screen-size variables for building media queries
 
@@ -28,4 +26,21 @@
     --screen-medium: 46.5rem;
     --screen-large: 64rem;
     --screen-xl: 90rem;
+}
+
+/* 
+    Discrete buttons have a border radius of 12px.
+    Level-2 sections have a broder radius of 24px.
+*/
+
+:root {
+    --radius-small: 0.75rem;
+    --radius-large: 1.5rem;
+}
+
+/* All animations will be ease-in-out and have a duration of 90ms. */
+
+* {
+    transition-duration: 90ms;
+    transition-timing-function: ease-in-out;
 }
