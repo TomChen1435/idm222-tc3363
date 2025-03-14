@@ -109,3 +109,10 @@
     --alertTextColor0: black;
     --alertTextColor1: white;
 }
+
+/* Different states of hyperlinks will be displayed by different text colors. */
+
+a.hyperlink:link {color: var(--blue);}
+a.hyperlink:hover {color: var(--indigo);}
+a.hyperlink:active {color: var(--pink);}
+a.hyperlink:visited {color: var(--purple);}
