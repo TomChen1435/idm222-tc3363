@@ -41,26 +41,36 @@
     --darkGray1: var(--iosSystemGray5);
 }
 
-/* For brand-related colors, I am using the green colors from IBM Design Language. */
+/* For brand-related colors, I am using the green and magenta colors from IBM Design Language. */
 
 :root {
     --ibmGreen30: #6fdc8c;
+    --ibmMagenta30: #ffafd2;
     --ibmGreen40: #42be65;
+    --ibmMagenta40: #ff7eb6;
     --ibmGreen50: #24a148;
+    --ibmMagenta50: #ee5396;
     --ibmGreen60: #198038;
+    --ibmMagenta60: #d02670;
     --ibmGreen70: #0e6027;
+    --ibmMagenta70: #9f1853;
 }
 
 /* Header and footer will always use the same color. */
 
-:root {--greenStandard: var(--ibmGreen50);}
+:root {
+    --greenStandard: var(--ibmGreen50);
+    --magentaStandard: var(--ibmMagenta50);
+}
 
 /* For the light mode, I am using the designs of white texts on darker green backgrounds. */
 
 @media (prefers-color-scheme: light) {
     :root {
         --green0: var(--ibmGreen60);
+        --magenta0: var(--ibmMagenta60);
         --green1: var(--ibmGreen70);
+        --magenta1: var(--ibmMagenta70);
         --textOnColor: white;
     }
 }
@@ -70,7 +80,9 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --green0: var(--ibmGreen40);
+        --magenta0: var(--ibmMagenta40);
         --green1: var(--ibmGreen30);
+        --magenta1: var(--ibmMagenta30);
         --textOnColor: black;
     }
 }
