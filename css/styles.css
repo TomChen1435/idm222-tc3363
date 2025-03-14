@@ -1,21 +1,31 @@
 * {box-sizing: border-box;}
 
-/* Screen-size variables for building media queries */
+/*  */
 
 /* 
+    Screen-size variables for building media queries
+
     iPhone SE 1 Portrait = 320 x 568;
     iPad mini 6 Portrait = 744 x 1133;
     iPad mini 5 Landscape = 1024 x 768;
 
     320px <= screen-width-small < 744px;
+    @media (var(--screen-small) <= width < var(--screen-medium)) {}
+
     744px <= screen-width-medium < 1024px;
+    @media (var(--screen-medium) <= width < var(--screen-large)) {}
+
     1024px <= screen-width-large < 1440px;
+    @media (var(--screen-large) <= width < var(--screen-xl)) {}
+
     1440px <= screen-width-extra-large;
+    When the screen is wider than 1440p, there is no need to expand the content anymore.
+    @media (var(--screen-xl) <= width) {}
 */
 
 :root {
-    --screen-small: 320px;
-    --screen-medium: 744px;
-    --screen-large: 1024px;
-    --screen-xl: 1440px;
+    --screen-small: 20rem;
+    --screen-medium: 46.5rem;
+    --screen-large: 64rem;
+    --screen-xl: 90rem;
 }
