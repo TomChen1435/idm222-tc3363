@@ -7,8 +7,6 @@ header#alert {
     flex-flow: column nowrap;
     height: auto;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
     width: 100%;
 }
 
@@ -26,7 +24,7 @@ header#alert p {
 @media (min-width: 320px) and (max-width: 479px) {
     header#alert {
         gap: 0.25rem;
-        padding: 0.75rem 0;
+        padding: 0.75rem;
     }
     
     header#alert p {
@@ -39,7 +37,7 @@ header#alert p {
 @media (min-width: 480px) {
     header#alert {
         gap: 0.5rem;
-        padding: 1rem 0;
+        padding: 1rem;
     }
 }
 
