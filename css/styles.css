@@ -27,10 +27,6 @@
     --screen-xl: 1440px;
 }
 
-/*
-    @media screen and (min-width: calc(var(--screen--min))) and (max-width: calc(var(--screen--max))) {}
-*/
-
 /* 
     Discrete buttons have a border radius of 12px.
     Level-2 sections have a broder radius of 24px.
@@ -71,10 +67,3 @@
 /* All elements with a class name of 'hide' do not display. */
 
 .hide {display: none !important;}
-
-/* Remove all margins and paddings. */
-
-* {
-    margin: 0;
-    padding: 0;
-}
