@@ -15,6 +15,9 @@
 
     1440px <= screen-width-extra-large;
     When the screen is wider than 1440p, there is no need to expand the content anymore.
+
+    Add later:
+    Variables cannot be used in media queries, which makes me pivot with a different design approach. I will not choose breakpoints based on devices but create different sets of breakpoints for each section of the page.
 */
 
 :root {
@@ -70,7 +73,7 @@
 
 /* 
     Font Weights
-    
+
     100 = Thin/Hairline; 
     200 = Extra Light/Ultra Light; 
     300 = Light; 
