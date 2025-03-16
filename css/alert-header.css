@@ -20,7 +20,7 @@ header#alert p {
 
 /* When screen width is between 320px and 480px */
 
-@media (min-width: 320px) and (max-width: 479px) {
+@media (max-width: 479px) {
     header#alert {
         gap: 0.25rem;
         padding: 0.75rem;
