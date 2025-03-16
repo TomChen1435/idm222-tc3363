@@ -72,6 +72,8 @@ nav button:active, nav a.btn:active {
     }
 }
 
+/* When the screen width is between 540px and 1024px, the buttons have a smaller height to keep consistency with the previous designs. */
+
 @media (min-width: 540px) and (max-width: 1023px) {
     nav button, nav a.btn {
         font-size: 1.25rem;
@@ -86,7 +88,7 @@ nav button:active, nav a.btn:active {
     nav {
         gap: 1rem;
     }
-    
+
     nav button, nav a.btn {
         font-size: 1.5rem;
         height: var(--btn-height-large);
