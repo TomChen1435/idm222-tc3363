@@ -70,7 +70,7 @@ header#alert p {
 /* The codes of animation for different levels of elements are written separately, but as the rhythm is the same, I am writing them as local variables. */
 
 header#alert {
-    --aDuration: 1.5s;
+    --aDuration: 1s;
     --aDelay: 250ms;
 }
 
