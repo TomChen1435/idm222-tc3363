@@ -34,7 +34,13 @@ nav button:active, nav a.btn:active {
 
 /* When the screen width is between 320px and 540px, buttons are discrete for more intuitive operation. */
 
-@media (min-width: 320px) and (max-width: 539px) {
+@media (max-width: 539px) {
+    nav {
+        background-color: var(--greenStandard);
+        gap: 1rem;
+        /* There is no top padding to avoid conflict with the header's bottom padding. */
+        padding: 0 1rem 1rem;
+    }
     nav button, nav a.btn {
         background-color: var(--green0);
         border-radius: var(--radius-small);
@@ -44,19 +50,36 @@ nav button:active, nav a.btn:active {
     }
 }
 
-/* When the screen width is between 320px and (), buttons are displayed in a column. */
+/* When the screen width is between 320px and 360px, buttons are displayed in a column. */
 
-@media (min-width: 320px) and (max-width: 539px) {
+@media (max-width: 359px) {
     nav {
-        background-color: var(--greenStandard);
         flex-direction: column;
-        gap: 1rem;
-        /* There is no top padding to avoid conflict with the header's bottom padding. */
-        padding: 0 1rem 1rem;
     }
 }
 
-/* When the screen width is between () and 540px, displaying the buttons in a column is space-wasting. Instead, buttons are splitted into two rows, with "Menu" and "Catering" in the first row, while the others share the second. */
+/* 
+    When the screen width is between 360px and 540px, displaying the buttons in a column is space-wasting. Instead, buttons are splitted into two rows, with "Menu" and "Catering" in the first row, while the others share the second. 
+
+    This portion will override the more general rule of creating a flexbox. 
+*/
+
+@media (min-width: 360px) and (max-width: 539px) {
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        'menu menu catering'
+        'delivery faqs about';
+    }
+
+    button#menu-btn-nav {grid-area: menu;}
+    a#catering-btn-nav {grid-area: catering;}
+    button#delivery-btn-nav {grid-area: delivery;}
+    button#faq-btn-nav {grid-area: faqs;}
+    button#about-btn-nav {grid-area: about;}
+}
 
 /* When the screen width is greater than 540px, buttons lose their discrete shape and display in a row to save space for the contents. */
 
