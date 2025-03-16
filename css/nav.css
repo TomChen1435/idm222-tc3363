@@ -1,1 +1,95 @@
 /* Navigation */
+
+nav {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+nav button, nav a.btn {
+    align-content: center;
+    border: none;
+    color: var(--textOnColor);
+    font-family: var(--fontRegular);
+    font-weight: 500;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    transition-property: background-color, color;
+}
+
+/* When hovering, the buttons have a different background color. */
+
+nav button:hover, nav a.btn:hover {
+    background-color: var(--green1);
+}
+
+/* When pressing/clicking, the texts and backgrounds change color with each other. */
+
+nav button:active, nav a.btn:active {
+    background-color: var(--textOnColor);
+    color: var(--green1);
+}
+
+/* When the screen width is between 320px and 540px, buttons are discrete for more intuitive operation. */
+
+@media (min-width: 320px) and (max-width: 539px) {
+    nav button, nav a.btn {
+        background-color: var(--green0);
+        border-radius: var(--radius-small);
+        font-size: 1.25rem;
+        height: var(--btn-height-small);
+        width: 100%;
+    }
+}
+
+/* When the screen width is between 320px and (), buttons are displayed in a column. */
+
+@media (min-width: 320px) and (max-width: 539px) {
+    nav {
+        background-color: var(--greenStandard);
+        flex-direction: column;
+        gap: 1rem;
+        /* There is no top padding to avoid conflict with the header's bottom padding. */
+        padding: 0 1rem 1rem;
+    }
+}
+
+/* When the screen width is between () and 540px, displaying the buttons in a column is space-wasting. Instead, buttons are splitted into two rows, with "Menu" and "Catering" in the first row, while the others share the second. */
+
+/* When the screen width is greater than 540px, buttons lose their discrete shape and display in a row to save space for the contents. */
+
+@media (min-width: 540px) {
+    nav {
+        background-color: var(--green0);
+        flex-direction: row;
+    }
+
+    nav button, nav a.btn {
+        background: none;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 1023px) {
+    nav button, nav a.btn {
+        font-size: 1.25rem;
+        height: var(--btn-height-small);
+        padding: 0 1rem;
+    }
+}
+
+/* When the screen width is greater than 1024px, buttons get larger to make more use of the larger screen. */
+
+@media (min-width: 1024px) {
+    nav {
+        gap: 1rem;
+    }
+    
+    nav button, nav a.btn {
+        font-size: 1.5rem;
+        height: var(--btn-height-large);
+        padding: 0 1.25rem;
+    }
+}
