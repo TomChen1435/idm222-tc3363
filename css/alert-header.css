@@ -6,7 +6,6 @@ header#alert {
     display: flex;
     flex-flow: column nowrap;
     height: auto;
-    justify-content: space-between;
     width: 100%;
 }
 
