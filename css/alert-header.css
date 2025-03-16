@@ -66,3 +66,42 @@ header#alert p {
 }
 
 /* Breathing animation to catch users' attention */
+
+/* The codes of animation for different levels of elements are written separately, but as the rhythm is the same, I am writing them as local variables. */
+
+header#alert {
+    --aDuration: 1.5s;
+    --aDelay: 250ms;
+}
+
+header#alert {
+    animation: breathe-background var(--aDuration) ease-in-out var(--aDelay) 4 alternate;
+}
+
+@keyframes breathe-background {
+    0% {
+        background-color: var(--alertBackground0);
+    }
+    67% {
+        background-color: var(--alertBackground1);
+    }
+    100% {
+        background-color: var(--alertBackground1);
+    }
+}
+
+header#alert p, header#alert p span {
+    animation: breathe-text var(--aDuration) ease-in-out var(--aDelay) 4 alternate;
+}
+
+@keyframes breathe-text {
+    0% {
+        color: var(--alertTextColor0);
+    }
+    67% {
+        color: var(--alertTextColor1);
+    }
+    100% {
+        color: var(--alertTextColor1);
+    }
+}
