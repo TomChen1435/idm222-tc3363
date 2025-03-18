@@ -58,8 +58,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('media/typefaces/Montserrat.ttf') format('truetype');
-    font-style: normal;
+    src: url('../media/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 
 /* 
