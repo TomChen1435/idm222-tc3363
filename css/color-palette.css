@@ -56,7 +56,7 @@
     --ibmMagenta70: #9f1853;
 }
 
-/* Header and footer will always use the same color. */
+/* Background color for the elements that have to have green elements over green background. */
 
 :root {
     --greenStandard: var(--ibmGreen50);
