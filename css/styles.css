@@ -75,6 +75,10 @@
 
 .hide {display: none !important;}
 
+/* The background color is the lightest tint of gray in light mode and the darkest shade of gray in dark mode. */
+
+body {background-color: var(--darkGray0);}
+
 /* 
     Font Weights
 
