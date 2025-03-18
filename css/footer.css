@@ -101,6 +101,6 @@ picture.icon, picture.icon source, picture.icon img {
     footer {
         gap: 17rem;
         justify-content: center;
-        padding: 1rem auto;
+        padding: 1rem 0;
     }
 }
