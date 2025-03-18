@@ -70,9 +70,9 @@ header#alert {
     --aDelay: 250ms;
 }
 
-header#alert {
+/* header#alert {
     animation: breathe-background var(--aDuration) ease-in-out var(--aDelay) 4 alternate;
-}
+} */
 
 @keyframes breathe-background {
     0% {
@@ -86,9 +86,9 @@ header#alert {
     }
 }
 
-header#alert p, header#alert p span {
+/* header#alert p, header#alert p span {
     animation: breathe-text var(--aDuration) ease-in-out var(--aDelay) 4 alternate;
-}
+} */
 
 @keyframes breathe-text {
     0% {
