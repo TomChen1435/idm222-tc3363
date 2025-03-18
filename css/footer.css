@@ -1,1 +1,97 @@
 /* Footer */
+
+footer {
+    background-color: var(--green0);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+p.copyright-info {
+    color: var(--textOnColor);
+}
+
+section.payment-method-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+picture.icon, picture.icon source, picture.icon img {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+/* When screen width is less than 1024px, all contents should be centered and split into two rows. */
+
+@media (max-width: 1023px) {
+    footer {
+        align-items: center;
+        flex-direction: column;
+        gap: 0.75rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    p.copyright-info {
+        text-align: center;
+    }
+    
+    section.payment-method-icons {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    picture.icon, picture.icon source, picture.icon img {
+        height: 1rem;
+    }
+}
+
+/* When screen width is greater than 540px, increase the font size. */
+
+@media (min-width: 540px) {
+    p.copyright-info {
+        font-size: 1.125rem;
+    }
+}
+
+/* When screen width is greater than 640px, the icons expand and take more space. */
+
+@media (min-width: 640px) {
+    section.payment-method-icons {
+        flex-wrap: nowrap;
+        gap: 1rem;
+        justify-self: flex-end;
+    }
+    
+    picture.icon, picture.icon source, picture.icon img {
+        height: 1.25rem;
+    }
+}
+
+/* When screen width is greater than 1024px, all contents can fit into the same row to take advantage of the extra horizontal space. */
+
+@media (min-width: 1024px) {
+    footer {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    
+    p.copyright-info {
+        justify-self: flex-start;
+        text-align: left;
+    }
+}
+
+/* When screen width is greater than 1280px, add more paddings to the left and right of the contents. */
+
+@media (min-width: 1280px) {
+    footer {
+        gap: 17rem;
+        justify-content: center;
+        padding: 1rem auto;
+    }
+}
