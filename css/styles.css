@@ -90,3 +90,9 @@
     900 = Black/Heavy; 
     950 = Extra Black/Ultra Black; 
 */
+
+a, p {
+    font-family: var(--fontRegular);
+    font-weight: 400;
+    margin: 0;
+}
