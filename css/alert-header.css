@@ -11,9 +11,6 @@ header#alert {
 
 header#alert p {
     color: var(--alertTextColor0);
-    font-family: var(--fontRegular);
-    font-weight: 400;
-    margin: 0;
     padding: 0;
     text-align: center;
 }

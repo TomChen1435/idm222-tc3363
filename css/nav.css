@@ -38,8 +38,7 @@ nav button:active, nav a.btn:active {
     nav {
         background-color: var(--greenStandard);
         gap: 1rem;
-        /* There is no top padding to avoid conflict with the header's bottom padding. */
-        padding: 0 1rem 1rem;
+        padding: 1rem;
     }
     nav button, nav a.btn {
         background-color: var(--green0);
