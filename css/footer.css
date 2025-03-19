@@ -80,6 +80,7 @@ picture.icon, picture.icon source, picture.icon img {
     footer {
         align-items: center;
         flex-direction: row;
+        justify-content: space-between;
     }
     
     p.copyright-info {
@@ -88,19 +89,16 @@ picture.icon, picture.icon source, picture.icon img {
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1199px) {
     footer {
-        justify-content: space-between;
         padding: 1rem;
     }
 }
 
-/* When screen width is greater than 1280px, add more paddings to the left and right of the contents. */
+/* When screen width is greater than 1200px, add more paddings to the left and right of the contents. */
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
     footer {
-        gap: 17rem;
-        justify-content: center;
-        padding: 1rem 0;
+        padding: 1rem 5%;
     }
 }
