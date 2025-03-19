@@ -1,0 +1,136 @@
+/* Header */
+
+header#header {
+    background-color: var(--green0);
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 1rem;
+}
+
+a#logo {
+    align-self: flex-start;
+    color: var(--textOnColor);
+    font-family: var(--fontHeadings);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+section.page-btns {
+    background-color: var(--greenStandard);
+    border-radius: calc(var(--radius-small) + 1rem);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+button.icon {
+    align-items: center;
+    background-color: var(--green0);
+    border: none;
+    border-radius: var(--radius-small);
+    display: flex;
+    height: var(--btn-height-small);
+    justify-content: center;
+    transition-property: background-color;
+}
+
+button.icon svg {
+    fill: var(--textOnColor);
+    height: calc(var(--btn-height-small) - 0.5rem);
+    transition-property: color;
+    width: auto;
+}
+
+/* When hovering, the buttons have a different background color. */
+
+button.icon:hover {
+    background-color: var(--green1);
+}
+
+/* When pressing/clicking, the texts and backgrounds change color with each other. */
+
+button.icon:active {
+    background-color: var(--textOnColor);
+}
+
+button.icon:active svg {
+    color: var(--green1);
+}
+
+/* When screen width is less that 580px, the logo and the buttons split into different rows. */
+
+@media (max-width: 579px) {
+    header#header {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    a#logo {
+        justify-self: flex-start;
+    }
+
+    /* The buttons both strech to take up all horizontal space. */
+
+    section.page-btns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 'cart account';
+    }
+
+    button#cart-btn-header {grid-area: cart;}
+    button#account-btn-header {grid-area: account;}
+
+    button.icon {
+        width: 100%;
+    }
+}
+
+/* When screen width is greater than 580px, the logo and the buttons share the horizontal space with space in between. */
+
+@media (min-width: 580px) {
+    header#header {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    a#logo {
+        align-self: center;
+    }
+
+    section.page-btns {
+        align-self: flex-end;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-self: flex-end;
+    }
+
+    button.icon {
+        width: var(--btn-height-small);
+    }
+}
+
+/* When screen width is greater than 640px, paddings on the sides grow with the screen width. */
+
+@media (min-width: 640px) {
+    header#header {
+        padding: 1rem 5%;
+    }
+}
+
+/* When screen width is less than 750px, the logo has a font size of 32px. */
+
+@media (max-width: 749px) {
+    a#logo {
+        font-size: 2rem;
+    }
+}
+
+/* When screen width is greater than 750px, the logo has a font size of 36px. */
+
+@media (min-width: 750px) {
+    a#logo {
+        font-size: 2.25rem;
+    }
+}
