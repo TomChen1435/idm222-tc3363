@@ -1,0 +1,86 @@
+/* Information card designs */
+
+section.card {
+    background: none;
+    border: 0.25rem solid var(--moderateGray0);
+    border-radius: var(--radius-large);
+    transition-property: background-color, border-color;
+    width: 100%;
+}
+
+section.card:hover {
+    background-color: var(--backgroundFocus);
+    border-color: var(--moderateGray1);
+}
+
+section.card h2 {
+    background-color: var(--green0);
+    --radius-large-minus: calc(var(--radius-large) - 0.25rem);
+    border-radius: var(--radius-large-minus) var(--radius-large-minus) 0 0;
+    color: var(--textOnColor);
+    font-family: var(--fontRegular);
+    font-weight: 500;
+    margin: 0;
+    padding: 1.5rem 2rem 0.875rem;
+    transition-property: background-color;
+    width: 100%;
+}
+
+section.card:hover h2 {
+    background-color: var(--green1);
+}
+
+section.card.highlight h2 {
+    background-color: var(--alertBackground0);
+    color: var(--alertTextColor0);
+    transition-property: background-color, color;
+}
+
+section.card.highlight:hover h2 {
+    background-color: var(--alertBackground1);
+    color: var(--alertTextColor1);
+}
+
+section.card hr {
+    border: none;
+    border-radius: 0.125rem;
+    background-color: var(--magenta1);
+    height: 0.25rem;
+    margin: -0.125rem auto;
+    width: calc(100% - 3rem);
+}
+
+section.card:hover hr {
+    background-color: var(--magenta0);
+}
+
+section.card-content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    margin: 0.125rem 0 0;
+    padding: 1rem 2rem 1.5rem;
+}
+
+section.card-content hr {
+    align-self: center;
+    background-color: var(--moderateGray0);
+    margin: 0.5rem 0;
+    transition-property: background-color;
+    width: 100%;
+}
+
+section.card:hover section.card-content hr {
+    background-color: var(--moderateGray1);
+}
+
+section.owner-info {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+p.name {
+    font-size: 1.375rem;
+    font-weight: 500;
+}
