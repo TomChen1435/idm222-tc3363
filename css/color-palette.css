@@ -5,12 +5,14 @@
 @media (prefers-color-scheme: light) {
     :root {
         --textColorRegular: black;
+        --backgroundFocus: white;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --textColorRegular: white;
+        --backgroundFocus: black;
     }
 }
 
@@ -35,10 +37,10 @@
 }
 
 :root {
-    --lightGray0: var(--iosSystemGray2);
-    --lightGray1: var(--macosSystemGray);
-    --darkGray0: var(--iosSystemGray6);
-    --darkGray1: var(--iosSystemGray5);
+    --moderateGray0: var(--iosSystemGray2);
+    --moderateGray1: var(--macosSystemGray);
+    --extremeGray0: var(--iosSystemGray6);
+    --extremeGray1: var(--iosSystemGray5);
 }
 
 /* For brand-related colors, I am using the green and magenta colors from IBM Design Language. */
