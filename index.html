@@ -7,13 +7,7 @@
     <!-- All hyperlinks will open the websites on separate tabs. -->
     <base target="_blank">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/color-palette.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/alert-header.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/card-designs.css">
 </head>
 <body>
 
@@ -51,9 +45,20 @@
         <button id="about-btn-nav">About</button>
     </nav>
 
-    <div class="contents">
         <main>
             <section class="main" id="home">
+                <section class="carousel">
+                    <section class="carousel-content">
+                        <h1 class="slide">Fresh ingredients. Taste the difference.</h1>
+                        <h1 class="slide">Prepared and delivered weekly.</h1>
+                        <button class="normal" id="menu-carousel">Click to Shop</button>
+                    </section>
+                    <picture>
+                        <source type="image/webp" srcset="media/images/slide-1.webp">
+                        <img src="media/images/slide-1.png" alt="Carousel Image">
+                    </picture>
+                </section>
+
                 <section class="card">
                     <h2>How Does Our Service Work?</h2>
                     <hr>
@@ -64,14 +69,18 @@
                                 <p>A new menu is posted every week with full macronutrient content.</p>
                                 <p>Orders must be placed by Friday at 5:00 PM for Sunday and Monday delivery.</p>
                             </dd>
+                        </dl>
                             <hr>
+                        <dl>
                             <dt>Hangout and Relax</dt>
                             <dd>
                                 <p>We purchase, prepare, and package your meals in proper fashion.</p>
                                 <p>All of our proteins and veggies are fresh and never frozen.</p>
                                 <p>All of our containers are microwave and dishwasher safe, not to mention they make great tupperware.</p>
                             </dd>
+                        </dl>
                             <hr>
+                        <dl>
                             <dt>Doorstep Delivery</dt>
                             <dd>
                                 <p>We deliver you meals directly to your doorstep.</p>
@@ -82,8 +91,175 @@
                     </section>
                 </section>
             </section>
+
+            <section class="main hide" id="menu">
+                <h1>Menu</h1>
+                <section class="menu-card-collection">
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/1.webp">
+                            <img src="media/images/1.png" alt="Food Image">
+                        </picture>
+                        <h3>Chorizo Breakfast Scramble</h3>
+                        <p class="price">$13.50</p>
+                    </section>
     
-            <section class="main" id="delivery-info">
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/2.webp">
+                            <img src="media/images/2.png" alt="Food Image">
+                        </picture>
+                        <h3>Morning Hash</h3>
+                        <p class="price">$13.00</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/3.webp">
+                            <img src="media/images/3.png" alt="Food Image">
+                        </picture>
+                        <h3>Peanut Butter & Chocolate Chip Protein Pancakes</h3>
+                        <p class="price">$12.00</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/4.webp">
+                            <img src="media/images/4.png" alt="Food Image">
+                        </picture>
+                        <h3>Plain Protein Pancakes</h3>
+                        <p class="price">$12.00</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/5.webp">
+                            <img src="media/images/5.png" alt="Food Image">
+                        </picture>
+                        <h3>Egg Ground Turkey Breakfast Burrito</h3>
+                        <p class="price">$13.00</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/6.webp">
+                            <img src="media/images/6.png" alt="Food Image">
+                        </picture>
+                        <h3>Milan Salad</h3>
+                        <p class="price">$12.00</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/7.webp">
+                            <img src="media/images/7.png" alt="Food Image">
+                        </picture>
+                        <h3>Buffalo Chicken Wrap</h3>
+                        <p class="price">$12.00</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/8.webp">
+                            <img src="media/images/8.png" alt="Food Image">
+                        </picture>
+                        <h3>Chicken Salad Wrap</h3>
+                        <p class="price">$12.00</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/9.webp">
+                            <img src="media/images/9.png" alt="Food Image">
+                        </picture>
+                        <h3>Philly Chicken Cheesesteak</h3>
+                        <p class="price">$12.50</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/10.webp">
+                            <img src="media/images/10.png" alt="Food Image">
+                        </picture>
+                        <h3>Philly Beef Steak Sandwich</h3>
+                        <p class="price">$14.00</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/11.webp">
+                            <img src="media/images/11.png" alt="Food Image">
+                        </picture>
+                        <h3>Chicken Thigh Dirty Rice</h3>
+                        <p class="price">$12.50</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/12.webp">
+                            <img src="media/images/12.png" alt="Food Image">
+                        </picture>
+                        <h3>Custom Shrimp Box</h3>
+                        <p class="price">$13.00</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/13.webp">
+                            <img src="media/images/13.png" alt="Food Image">
+                        </picture>
+                        <h3>Wild for Salmon</h3>
+                        <p class="price">$14.50</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/14.webp">
+                            <img src="media/images/14.png" alt="Food Image">
+                        </picture>
+                        <h3>Deconstructed Chicken Pot Pie</h3>
+                        <p class="price">$13.50</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/15.webp">
+                            <img src="media/images/15.png" alt="Food Image">
+                        </picture>
+                        <h3>Carribean Jerk Salmon</h3>
+                        <p class="price">$15.00</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/16.webp">
+                            <img src="media/images/16.png" alt="Food Image">
+                        </picture>
+                        <h3>Grilled Shrimp Fettucini Alfredo</h3>
+                        <p class="price">$14.50</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/17.webp">
+                            <img src="media/images/17.png" alt="Food Image">
+                        </picture>
+                        <h3>Blackened Salmon</h3>
+                        <p class="price">$15.00</p>
+                    </section>
+    
+                    <section class="menu-card">
+                        <picture class="food-img">
+                            <source type="image/webp" srcset="media/images/18.webp">
+                            <img src="media/images/18.png" alt="Food Image">
+                        </picture>
+                        <h3>Japanese Steak</h3>
+                        <p class="price">$18.00</p>
+                    </section>
+                </section>
+            </section>
+    
+            <section class="main hide" id="delivery-info">
                 <h1>Delivery Information</h1>
                 <section class="card highlight">
                     <h2>Please Note</h2>
@@ -157,7 +333,7 @@
                 </section>
             </section>
     
-            <section class="main" id="faqs">
+            <section class="main hide" id="faqs">
                 <h1>Frequently Asked Questions</h1>
                 <p>For all questions about delivery and pick-up, please refer to <a class="hyperlink" id="delivery-link" href="#">Delivery Information</a>.</p>
                 <section class="card highlight">
@@ -255,7 +431,7 @@
                 </section>
             </section>
     
-            <section class="main" id="about">
+            <section class="main hide" id="about">
                 <h1>About Us</h1>
                 <section class="card">
                     <h2>Our Company Name and Commitments</h2>
@@ -278,9 +454,45 @@
                     </section>
                 </section>
             </section>
+
+            <section class="card hide" id="contact">
+                <h2>Contact Us</h2>
+                <hr>
+                <section class="card-content">
+                    <p>Tel: <a href="tel:+12672904452" class="hyperlink">267-290-4452</a></p>
+                    <p>Email: <a href="mailto:info@eatpmp.com" class="hyperlink">info@eatpmp.com</a></p>
+                    <p>Our address: <a class="hyperlink" href="https://www.google.com/maps/place/5070+Parkside+Ave,+Philadelphia,+PA+19131/@39.9796583,-75.2212417,16z/data=!3m1!4b1!4m6!3m5!1s0x89c6c716febc070f:0x681f045bafc6994c!8m2!3d39.9796583!4d-75.2212417!16s%2Fg%2F11b8ycgrxl?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D">5070 Parkside Avenue, Philadelphia, PA 19131</a>.</p>
+                    <section class="icons">
+                        <a href="https://www.facebook.com/PerformanceMealPrep" class="icon">
+                            <picture class="icon">
+                                <source type="image/svg+xml" srcset="media/icons/facebook.svg">
+                                <img src="media/icons/facebook.png" alt="Facebook">
+                            </picture>
+                        </a>
+                        <a href="https://twitter.com/EAT_PMP" class="icon">
+                            <picture class="icon">
+                                <source type="image/svg+xml" srcset="media/icons/twitter.svg">
+                                <img src="media/icons/twitter.png" alt="Twitter">
+                            </picture>
+                        </a>
+                        <a href="https://www.instagram.com/performancemealprep" class="icon">
+                            <picture class="icon">
+                                <source type="image/svg+xml" srcset="media/icons/instagram.svg">
+                                <img src="media/icons/instagram.png" alt="Instagram">
+                            </picture>
+                        </a>
+                    </section>
+                    <hr>
+                    <h3>Sign up for our newsletter!</h3>
+                    <section class="input">
+                        <input type="text" placeholder="name@example.com">
+                        <button class="normal">Submit</button>
+                    </section>
+                    
+                </section>
+            </section>
         </main>
-    </div>
-    
+
     <footer>
         <!-- Footer includes the copyright information and the logos of the accepted online payment methods. -->
         <p class="copyright-info">© 2025, Performance Meal Prep - Mock Website</p>
@@ -318,6 +530,7 @@
     </footer>
 
     <script src="javascript/navigation.js"></script>
+    <script src="javascript/postload.js"></script>
 
 </body>
 </html>
